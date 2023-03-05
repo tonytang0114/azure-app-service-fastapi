@@ -12,5 +12,9 @@ def getUsers():
         {
             "name": "roshi",
             "id": 1
+        },
+        {
+            "name": "else",
+            "id": 2
         }
     ]
