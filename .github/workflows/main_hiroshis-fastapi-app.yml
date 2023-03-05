@@ -61,6 +61,3 @@ jobs:
           app-name: 'hiroshis-fastapi-app'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0CC408ACC40C45E4BA746CFA4EF03809 }}
-
-      - name: 'Run start command'
-        run: gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
