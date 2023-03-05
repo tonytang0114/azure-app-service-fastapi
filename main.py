@@ -10,7 +10,7 @@ def index():
 def getUsers():
     return [
         {
-            "name": "roshi",
+            "name": "hiroshi",
             "id": 1
         },
         {
