@@ -31,9 +31,9 @@ shape: ["armor", "arms", "ball", "blob", "bug-wings", "fish", "head", "humanoid"
 def predict_happiness(color = 'black', shape = 'armor'):
 
     # Extract dictionaries saved from our jupyter notebook that map a category code to its name.
-    with open('./mappers/color_mapper.json', 'r') as colorfile:
+    with open('static/mappers/color_mapper.json', 'r') as colorfile:
         color_mapper = json.load(colorfile)
-    with open('./mappers/shape_mapper.json', 'r') as shapefile:
+    with open('static/mappers/shape_mapper.json', 'r') as shapefile:
         shape_mapper = json.load(shapefile)
 
     # Map the query parameters "color" and "shape" to its corresponding category codes
