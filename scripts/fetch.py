@@ -23,5 +23,5 @@ for ind in range(1, 152):
         'base_happiness': results['base_happiness']
     })
 
-with open('poke_data.json', 'w+') as f:
+with open('../static/poke_data.json', 'w+') as f:
     json.dump(poke_list, f)

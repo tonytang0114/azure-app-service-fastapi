@@ -41,7 +41,7 @@ def predict_happiness(color = 'black', shape = 'armor'):
     shape_code = [int(k) for k, v in shape_mapper.items() if v == shape][0]
 
     # Load the model we saved from our jupyter notebook and predict a happiness score.
-    model = load('my_model.joblib')
+    model = load('./static/my_model.joblib')
     score = model.predict([[color_code, shape_code]])
 
     return { "happiness_score": score[0][0] }
